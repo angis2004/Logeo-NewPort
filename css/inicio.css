@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #004a94; 
+    --secundary-color: #edededff;/*tipo amarillento*/
+    --blanco: #ffff;
+    --for-color: rgb(239,179,19);
+    --text-color:  #6c757d;
+    --enlaces: #17a2b8;
+    --text-container :#0000;
+    --error:#bb2929;
+
+}
+
+
+
+img, svg {
+    width: 10rem;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body and container styling */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--third-color);
+    
+ 
+}
+
+.login-container {
+ 
+
+    background: rgb(218, 221, 226);
+    background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%);
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    background-color:  var(--text-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 41rem;  /*ancho del contenido*/
+}
+
+/**/
+.container-text {
+    background-color: var(--primary-color);
+    display : flex;
+    height:40px;
+    color:var(--blanco);
+    font-size:40px; /*3 rem*/
+    line-height:40px;
+    /*para que esta centrado absolutamente */
+    overflow:hidden; 
+    font-family: "Nerko One", cursive;
+    margin-top: 1rem;
+
+    }
+
+    .animacion{
+        list-style:none;
+        padding-left:10px ;
+        animation:cambiar 7s infinite;
+        font-size: 3rem;
+       
+        }
+        
+       
+        ul,p{
+        margin:0;
+    
+        }
+        
+        /*ANIAMCION */
+        @keyframes cambiar {
+        /*EL espacio q hay entre ellos */
+        0%{ margin-top:0;}
+        20%{ margin-top:0;}
+        
+        
+        /*Esta sumando de 25 en 25*/
+        25%{ margin-top:-40px;}
+        50%{ margin-top:-40px;}
+        
+        
+        55%{ margin-top:-80px;}
+        80%{ margin-top:-80px;}
+        
+        85%{ margin-top:-40px;}
+        95%{ margin-top:-40px;}
+        
+        100%{ margin-top:-0;}
+        }
+
+      
+
+/* Ocultar la animación móvil por defecto */
+.animacion-movil, .login-text-movil {
+    display: none;
+    color:var(--secundary-color);
+    font-size: 3rem;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 700px) {
+    /* Oculta contenido para pantallas grandes en móviles */
+    .animacion, .login-text-title {
+        display: none;
+         }
+
+    /* Muestra el contenido para móviles */
+    .login-text-movil {
+        display: block;
+    }
+
+    .animacion-movil {
+        display: block;
+        list-style: none;
+        padding-left: 10px;
+        animation: cambiar-movil 7s infinite;
+    }
+}
+
+
+
+@keyframes cambiar-movil {
+    0% { margin-top: 0; }
+    20% { margin-top: 0; }
+    25% { margin-top: -40px; }
+    50% { margin-top: -40px; }
+    55% { margin-top: -80px; }
+    80% { margin-top: -80px; }
+    85% { margin-top: -40px; }
+    95% { margin-top: -40px; }
+    100% { margin-top: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Image and text styling */
+.login-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-icon {
+    height: 100%;
+    WIDTH: 100%;
+}
+
+.login-text-title {
+
+    background-color: var(--primary-color);
+    font-weight: 100;
+    font-size: 3rem;
+    color:var(--blanco) ;
+    padding-left: 40px;
+
+    
+}
+
+.login-text { /*ingrese ususairo y contra*/
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+   
+}
+
+
+
+
+/*:::::Pie de Pagina*/
+
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: var(--primary-color);/**/
+    
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color:var(--blanco);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color:var(--blanco);
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: var(--blanco);
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 5px;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: var(--for-color);
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color:var(--blanco);
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
