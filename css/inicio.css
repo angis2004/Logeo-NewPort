@@ -7,6 +7,7 @@
     --enlaces: #17a2b8;
     --text-container :#0000;
     --error:#bb2929;
+    --fondo:#EDEDED;
 
 }
 
@@ -189,9 +190,6 @@ img, svg {
 
 /*:::::Pie de Pagina*/
 
-
-
-
 .pie-pagina{
     width: 100%;
     background-color: var(--primary-color);/**/
@@ -296,15 +294,21 @@ img, svg {
 
 
 
-
-
-@media screen and (max-width:800px){
+@media screen and (max-width:800px){ /* Anchura minima ,desde ese tamaño hacia mayor*/
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap:30px; 
         padding: 35px 0px;
     }
 }
 
 
+@media screen and (min-width:1000px){/* Anchura maxima , ese tamaño hacia menor */ 
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

@@ -11,6 +11,7 @@
     --azul-claro: rgb(0,95,158);
     --azul-oscuro: rgb(0,67,121);
     --prueba-fondo: #618DAA;
+    --fondo:#EDEDED;
     --background:#a2acbd;
   
 
@@ -22,17 +23,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--prueba-fondo);
+    background-color: var(--fondo);
  
 }
 
 .login-container {
  
 
-    background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%);
+    /* background: linear-gradient(to bottom, rgba(218, 221, 226, 1) 49%, rgba(255, 255, 255, 1) 75%); */
     padding: 1.25rem;
     border-radius: 0.75rem;
-    background-color:  var(--background);
+    background-color:  var(--third-color);
     font-family: "PT Sans", sans-serif;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 30rem;
