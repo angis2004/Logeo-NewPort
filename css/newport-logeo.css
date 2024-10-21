@@ -212,6 +212,14 @@ border-radius: 3px;
     height: 1rem; /* Ajuste de tamaño del ícono */
   }
   
+/*Agregados*/
+
+.terminos-svg{
+    width:10rem;
+    height:10rem;
+}
+
+
 
 /*BOTON DE REDES*/
 
@@ -263,21 +271,30 @@ border-radius: 3px;
 
 
 /* PARA EL ERROR */
-
 .formulario__mensaje{
    
-    display: flex;
-	font-size: 14px;
-    color: #333;
-	background-color:var(--error);
-	text-align: center;
-    border-radius: 5px;
-    font-weight: 550;
-    padding: 5px;
-    /* para que este oculto */
+    display: flex; 
+    align-items: center; 
+    background-color: #f6b1b7; 
+    border: 1px solid #f5c6cb; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: #8f1824; 
+    font-weight: bold;
+    margin: 4px 0; 
+    height: 40px;
+    margin-top: 15px;
+/* para que este oculto */
     display: none;
-    
+
 }
+
+.error-svg{
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+    }
+
 
 .text-error{
     display: inline-block;
